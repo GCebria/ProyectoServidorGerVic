@@ -21,8 +21,9 @@
         %>
    <h1>Listado de canciones de <%=nombreU%></h1><br>
         
-       
-        <table border="1">
+       <div class="well">
+
+        <table class="table">
             <tr>
                 <th>Nombre</th>
                 <th>Album</th>
@@ -57,7 +58,7 @@
 
             <%}%>
 
-        </table>
+        </table></div>
             <br>
             <a href="listarUsers.jsp">Volver a usuarios</a>
     </body>    

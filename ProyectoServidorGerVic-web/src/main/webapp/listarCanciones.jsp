@@ -16,8 +16,8 @@
     <body>
         <h1>Listado de Canciones</h1><br>
         <a href="agregaCancion.jsp">Agregar canción</a><br>
-       
-        <table border="1">
+
+        <table class="table">
             <tr>
                 <th>ID Cancion</th>
                 <th>Nombre</th>
@@ -50,15 +50,16 @@
                 <td><%=duracion%> s.</td>
                 <td><%=ano%></td>
                 <td><%=precio%> €</td>
-                <td><a href="ModificarCancion?accion=editar&id=<%=id%>">Modificar</td>
-                <td><a href="eliminaCancionServlet?id=<%=id%>">Borrar</td>
+                <td><a href="ModificarCancion?accion=editar&id=<%=id%>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </td>
+                <td><a href="eliminaCancionServlet?id=<%=id%>"><i class="fa fa-trash-o" aria-hidden="true"></i></td>
             </tr>
 
 
             <%}%>
 
         </table>
-            <br>
-            <a href="index.jsp">Volver a inicio</a>
+        <br>
+        <a href="index.jsp">Volver a inicio</a>
     </body>
 </html>
